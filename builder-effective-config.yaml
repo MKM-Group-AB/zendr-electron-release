@@ -1,0 +1,63 @@
+directories:
+  output: release/build
+  buildResources: assets
+  app: release/app
+productName: Zendr Integration
+appId: Zendr
+asar: true
+asarUnpack: '**\*.{node,dll}'
+files:
+  - filter:
+      - dist
+      - node_modules
+      - package.json
+afterSign: .erb/scripts/notarize.js
+mac:
+  target:
+    target: default
+    arch:
+      - arm64
+      - x64
+  type: distribution
+  hardenedRuntime: true
+  entitlements: assets/entitlements.mac.plist
+  entitlementsInherit: assets/entitlements.mac.plist
+  gatekeeperAssess: false
+dmg:
+  contents:
+    - x: 130
+      'y': 220
+    - x: 410
+      'y': 220
+      type: link
+      path: /Applications
+win:
+  target:
+    - target: nsis
+      arch:
+        - ia32
+linux:
+  target:
+    - AppImage
+  category: Development
+extraResources:
+  - filter:
+      - ./assets/**
+      - ./dependencies
+      - ./configuration/**
+publish:
+  provider: github
+  owner: MKM-Group-AB
+  repo: zendr-electron-release
+nsis:
+  menuCategory: true
+  license: assets/licence.txt
+  shortcutName: Zendr
+  oneClick: false
+  perMachine: true
+  installerHeaderIcon: build/icon.ico
+  allowToChangeInstallationDirectory: true
+  runAfterFinish: false
+  include: assets/installer.nsh
+  guid: 7b574272-60df-4b5e-a419-904c28fa983d
+electronVersion: 20.0.2
