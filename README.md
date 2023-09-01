@@ -28,6 +28,14 @@ Effortlessly manage orders by carrier type using our carrier type filters. Speci
 
 Customize the interval at which orders are fetched with flexibility, ranging from as short as 5 seconds to a maximum of 60 seconds. This feature allows you to strike the perfect balance between real-time updates and system resource optimization.
 
+### Adjustments to private or company properties
+
+Customize the private or company properties of the order and how you want it to be sent to the portal.
+
+### Invoice reference 
+
+If you are using fetch type which is invoice you will have ability to change reference to be from order ID or invoice ID.
+
 ## Configuration Steps
 
 Follow these steps to set up the Visma Administration Integration for seamless order management:
@@ -55,6 +63,10 @@ Upon activating the integration in the Zendr Portal, you will receive an integra
 ### 5. Auto Start
 
 Consider enabling the 'Auto Start' feature by checking the provided box. This setting ensures that Zendr starts automatically when your Windows system starts. We recommend using this feature for a streamlined experience.
+
+### 6. Advanced Settings
+
+Those settings contains python path setup, if you have more python instalations in your workspace, make sure to chose one which have version 3.11 and that is 32 bits version as well.
 
 ## Installation
 
