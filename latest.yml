@@ -1,8 +1,8 @@
-version: 1.0.5
+version: 1.0.6
 files:
-  - url: Zendr-Integration-Setup-1.0.5.exe
-    sha512: Ow0ZcODBZywRKfRB6Gas7Xi7fWOEOlKSE69UlB3KKW04djE262ma1KTj7JneFlAcF5AGIAh8Eip+znMTtk4Tzw==
-    size: 89768129
-path: Zendr-Integration-Setup-1.0.5.exe
-sha512: Ow0ZcODBZywRKfRB6Gas7Xi7fWOEOlKSE69UlB3KKW04djE262ma1KTj7JneFlAcF5AGIAh8Eip+znMTtk4Tzw==
-releaseDate: '2023-09-01T09:20:43.095Z'
+  - url: Zendr-Integration-Setup-1.0.6.exe
+    sha512: JZGBD2ceYXds3UfIdJsygV5w31wIjV1gB6QTDEbVsno78G20yMPKJhgf+Birr0MNmj88f2Uh2VTyOFr2pLgoeA==
+    size: 89767692
+path: Zendr-Integration-Setup-1.0.6.exe
+sha512: JZGBD2ceYXds3UfIdJsygV5w31wIjV1gB6QTDEbVsno78G20yMPKJhgf+Birr0MNmj88f2Uh2VTyOFr2pLgoeA==
+releaseDate: '2023-09-18T14:30:55.631Z'
