@@ -19,8 +19,8 @@ ia32:
     - package.json
 nsis:
   script: |-
-    !include "C:\Users\vboxalda\Desktop\zendr-electron\node_modules\app-builder-lib\templates\nsis\include\StdUtils.nsh"
-    !addincludedir "C:\Users\vboxalda\Desktop\zendr-electron\node_modules\app-builder-lib\templates\nsis\include"
+    !include "C:\workspace\zendr\zendr-electron\node_modules\app-builder-lib\templates\nsis\include\StdUtils.nsh"
+    !addincludedir "C:\workspace\zendr\zendr-electron\node_modules\app-builder-lib\templates\nsis\include"
     !macro _isUpdated _a _b _t _f
       ${StdUtils.TestParameter} $R9 "updated"
       StrCmp "$R9" "true" `${_t}` `${_f}`
@@ -92,13 +92,13 @@ nsis:
       !insertmacro MUI_LANGUAGE "Vietnamese"
     !macroend
 
-    !addincludedir "C:\Users\vboxalda\Desktop\zendr-electron\assets"
-    !include "C:\Users\vboxalda\Desktop\zendr-electron\assets\installer.nsh"
-    !include "C:\Users\vboxalda\AppData\Local\Temp\t-gPEpqS\0-messages.nsh"
-    !include "C:\Users\vboxalda\AppData\Local\Temp\t-gPEpqS\1-messages.nsh"
-    !addplugindir /x86-unicode "C:\Users\vboxalda\AppData\Local\electron-builder\Cache\nsis\nsis-resources-3.4.1\plugins\x86-unicode"
+    !addincludedir "C:\workspace\zendr\zendr-electron\assets"
+    !include "C:\workspace\zendr\zendr-electron\assets\installer.nsh"
+    !addplugindir /x86-unicode "C:\Users\Niklas Johansson\AppData\Local\electron-builder\Cache\nsis\nsis-resources-3.4.1\plugins\x86-unicode"
+    !include "C:\Users\NIKLAS~1\AppData\Local\Temp\t-vsuhTU\0-messages.nsh"
+    !include "C:\Users\NIKLAS~1\AppData\Local\Temp\t-vsuhTU\1-messages.nsh"
     !macro licensePage
-      !insertmacro MUI_PAGE_LICENSE "C:\Users\vboxalda\Desktop\zendr-electron\assets\licence.txt"
+      !insertmacro MUI_PAGE_LICENSE "C:\workspace\zendr\zendr-electron\assets\licence.txt"
     !macroend
 
     Var newStartMenuLink
